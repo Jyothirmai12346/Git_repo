@@ -9,7 +9,7 @@ jobs:
           - name: setup Python
             uses: actions/setup-python@v4
           - name: Install requests library
-            uses: pip install requests
+            run: pip install requests
           - name: Run python script
             run: python repos.py
         
